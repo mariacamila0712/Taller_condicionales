@@ -21,6 +21,7 @@ puntos = float(input('Digite el promedio de puntos: '))
 ganancias = float(input('Digite el valor de las ganancias diarias: $'))
 if(puntos > 170):
     multa = ganancias * 0.5
-    print(f'El valor de la multa sera de: ${multa:,}.')
+    perdida = ganancias + multa
+    print(f'El valor de la multa sera de: ${perdida:,}.')
 else:
     print('Usted no tendrá multa.')
